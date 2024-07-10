@@ -1,6 +1,10 @@
 .plans {
     padding: 3.6vw;
 
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
     h2 {
         text-align: center;
     }
@@ -10,10 +14,32 @@
         justify-content: space-around;
         max-width: 380px;
         width: 100%;
+        list-style: none;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+
+        @media (max-width: 1024px) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
 
         &__item {
             text-align: center;
             padding: 20px;
+            
+            @media (max-width: 768px) {
+                img {
+                    width: 100%;
+                }
+
+                .button {
+                    margin-top: 32px;
+                }
+            }
 
             &:nth-child(2) {
                 background-image: url(../images/fundo_combo_plus.png);
